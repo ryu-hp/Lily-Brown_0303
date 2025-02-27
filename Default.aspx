@@ -5,9 +5,9 @@
   Copyright   : Copyright w2solution Co.,Ltd. 2009 All Rights Reserved.
 =========================================================================================================
 --%>
-<%@ Page Title="(企画名) | LILY BROWN（リリーブラウン）公式サイト／オフィシャル通販サイト" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
+<%@ Page Title="LILY BROWN CANDY STOCK ’25 Spring Collection | LILY BROWN（リリーブラウン）公式サイト／オフィシャル通販サイト" Language="C#" Inherits="ContentsPage" MasterPageFile="~/Form/Common/DefaultPage.master" %>
 <%-- ▽ユーザーコントロール宣言領域▽ --%>
-<%@ Register TagPrefix="uc" TagName="text" Src="~/Page/feature/lilybrown_lpTemplate/parts/text.ascx" %>
+<%@ Register TagPrefix="uc" TagName="text" Src="~/Page/feature/2025/0307/parts/text.ascx" %>
 <%@ Register TagPrefix="uc" TagName="archive" Src="~/Page/Parts/archive.ascx" %>
 <%-- △ユーザーコントロール宣言領域△ --%>
 <%--
@@ -28,7 +28,7 @@
       <p>
         <a href="<%= Constants.PATH_ROOT %>">LILY BROWN（リリーブラウン）</a> &gt;
         <a href="<%= Constants.PATH_ROOT %>page/topics">TOPICS（トピックス）</a> &gt;
-        (企画名)
+        LILY BROWN CANDY STOCK ’25 Spring Collection
       </p>
     </div>
 

@@ -16,11 +16,11 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <link rel="stylesheet" href='<%= Constants.PATH_ROOT %>Css/lp_common.css?ver=<%: System.IO.File.GetLastWriteTime(HttpContext.Current.Server.MapPath(Constants.PATH_ROOT + @"Css/lp_common.css")).ToString("yyMMddHHmmss") %>'>
 <%-- ▽外部ソース読み込み▽ --%>
-<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/lpTemplate/css/style.css">
+<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/css/style.css">
 <%-- △外部ソース読み込み△ --%>
 
 <%-- ▽編集エリア▽  --%>
-<div class="(計測タグ) articleContainer" id="(計測タグ)">
+<div class="LB250307candy articleContainer" id="LB250307candy">
   <p>ここにLPを作成してください。</p>
 </div>
 <%-- △編集エリア△ --%>
