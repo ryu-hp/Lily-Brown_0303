@@ -1,1 +1,142 @@
 @charset "UTF-8";
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  html {
+    font-size: 0.9090909091vw;
+  }
+}
+#LB250307candy {
+  /* Common */
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  /* fade */
+  /* main top */
+  /* mv */
+  /* slider */
+}
+#LB250307candy picture {
+  display: block;
+  width: 100%;
+}
+#LB250307candy a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+}
+#LB250307candy img {
+  width: 100%;
+}
+#LB250307candy li {
+  list-style: none;
+}
+#LB250307candy .js-fadeIn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+#LB250307candy .js-fadeIn.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#LB250307candy .js-fadeInLeft {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(80px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+#LB250307candy .js-fadeInRight {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-80px);
+  transition: opacity 1s, visibility 1s, transform 1s;
+}
+#LB250307candy .js-fadeInLeft.visible,
+#LB250307candy .js-fadeInRight.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+#LB250307candy .js-fadeInMv {
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 1s;
+}
+#LB250307candy .js-fadeInMv.visible {
+  visibility: visible;
+  opacity: 1;
+}
+#LB250307candy .contents__defined {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+#LB250307candy .mv {
+  width: 68.5714285714vw;
+  max-width: 960px;
+}
+#LB250307candy .mv__img {
+  width: 100%;
+}
+#LB250307candy .mv__text {
+  text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 1rem;
+}
+#LB250307candy .grid_wrapper {
+  display: grid;
+}
+#LB250307candy .sec_1 {
+  position: relative;
+  margin-top: 10rem;
+  width: 29rem;
+}
+#LB250307candy .sec_1_img_1 {
+  position: relative;
+  width: 29rem;
+}
+#LB250307candy .sec_1_img_1::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/pc_bg_1.jpg");
+  width: 45.5rem;
+  height: 45.4rem;
+  bottom: -23rem;
+  left: -29.3rem;
+  z-index: -1;
+  pointer-events: none;
+}
+@media screen and (max-width: 760px) {
+  #LB250307candy .sec_1_img_1::before {
+    content: "";
+    background-image: url("../img/sp_bg_1.jpg");
+  }
+}
+#LB250307candy .sec_1_img_2 {
+  position: absolute;
+  top: 22rem;
+  right: -20.4rem;
+  width: 22.8rem;
+  height: 30rem;
+  background: white;
+}
+#LB250307candy .sec_1_img_2__img {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.3rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+#LB250307candy .sec_1_img_2__img.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#LB250307candy .contents__max {
+  width: 100%;
+}
+#LB250307candy .lineup_image {
+  width: 18rem;
+}/*# sourceMappingURL=style.css.map */

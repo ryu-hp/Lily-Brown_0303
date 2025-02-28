@@ -1,0 +1,170 @@
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+  html {
+    font-size: calc(10 *(100vw / 1100));
+  }
+}
+
+#LB250307candy {
+  /* Common */
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+
+  picture {
+    display: block;
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  /* fade */
+  .js-fadeIn {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 1s;
+
+    &.visible {
+    opacity: 1;
+    visibility: visible;
+    }
+  }
+
+  .js-fadeInLeft {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(80px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .js-fadeInRight {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-80px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+  }
+
+  .js-fadeInLeft.visible,
+  .js-fadeInRight.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .js-fadeInMv {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 1s;
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  /* main top */
+  .contents__defined {
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+
+  /* mv */
+  .mv {
+    width: calc(960px * (100vw / 1400px));
+    max-width: 960px;
+
+    &__img {
+      width: 100%;
+    }
+    &__text {
+      text-align: center;
+      font-family: "游ゴシック体",
+        YuGothic,
+        "游ゴシック Medium",
+        "Yu Gothic Medium",
+        "游ゴシック",
+        "Yu Gothic",
+        sans-serif;
+      font-size: 1rem;
+    }
+  }
+
+  .grid_wrapper {
+    display: grid;
+  }
+
+  .sec_1 {
+    position: relative;
+    margin-top: 10rem;
+    width: 29rem;
+  }
+
+  .sec_1_img_1 {
+    position: relative;
+    width: 29rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../img/pc_bg_1.jpg');
+      width: 45.5rem;
+      height: 45.4rem;
+      bottom: -23rem;
+      left: -29.3rem;
+      z-index: -1;
+      pointer-events: none;
+    }
+    @media screen and (max-width: 760px) {
+      &::before {
+        content: '';
+        background-image: url('../img/sp_bg_1.jpg');
+      }
+    }
+  }
+
+  .sec_1_img_2 {
+    position: absolute;
+    top: 22rem;
+    right: -20.4rem;
+    width: 22.8rem;
+    height: 30rem;
+    background: white;
+    &__img {
+      position: absolute;
+      top: 0.3rem;
+      left: 0.3rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s, visibility 1s;
+      &.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+
+  /* slider */
+  .contents__max {
+    width: 100%;
+  }
+
+  // TODO width 調整
+  .lineup_image {
+    width: 18rem;
+  }
+}
