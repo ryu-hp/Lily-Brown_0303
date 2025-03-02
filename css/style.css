@@ -236,7 +236,7 @@
   width: 69.24rem;
   height: 46rem;
   left: -45.2rem;
-  bottom: -36.54rem;
+  top: 34%;
   z-index: -1;
   pointer-events: none;
 }
@@ -255,6 +255,7 @@
 #LB250307candy .sec_1-2__img_2_warp {
   position: absolute;
   max-width: 36.6rem;
+  width: 100%;
   border: solid 6px white;
   background-color: white;
   border-right: none;
