@@ -639,6 +639,23 @@ body {
   #LB250307candy .sec_8__img_1_wrap {
     width: 100%;
     grid-area: auto;
+    padding-left: calc(290 * 0.1333333333vw);
+  }
+  #LB250307candy .sec_8__img_1_wrap::before {
+    left: 0;
+    top: 33.4448160535%;
+    width: calc(460 * 0.1333333333vw);
+    padding-top: 130%;
+    height: auto;
+  }
+  #LB250307candy .sec_8__img_1_text {
+    text-align: right;
+    bottom: 1%;
+    right: calc(15 * 0.1333333333vw);
+    top: auto;
+    left: auto;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #fff;
   }
   #LB250307candy .sec_8__img_2_wrap {
     width: calc(630 * 0.1333333333vw);
@@ -651,6 +668,8 @@ body {
     padding-left: calc(60 * 0.1333333333vw);
     padding-right: calc(60 * 0.1333333333vw);
     grid-area: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 #LB250307candy .sec_9 {

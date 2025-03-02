@@ -739,6 +739,23 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       &__img_1_wrap{
         width: 100%;
         grid-area: auto;
+        padding-left: spSize(290);
+        &::before {
+          left: 0;
+          top: calc(200 / 598 * 100%);
+          width: spSize(460);
+          padding-top: calc(598 / 460 * 100%);
+          height: auto;
+        }
+      }
+      &__img_1_text {
+        text-align: right;
+        bottom: 1%;
+        right: spSize(15);
+        top:auto;
+        left: auto;
+        font-family: $second-font-family;
+        color: #fff;
       }
       &__img_2_wrap{
         width: spSize(630);
@@ -751,6 +768,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         padding-left: spSize(60);
         padding-right: spSize(60);
         grid-area: auto;
+        box-sizing: border-box;
       }
     }
   }
