@@ -263,6 +263,7 @@
 }
 #LB250307candy .sec_4 {
   margin-top: 10.95rem;
+  padding-right: 6rem;
 }
 #LB250307candy .sec_4__inner {
   position: relative;
@@ -312,16 +313,19 @@
 #LB250307candy .sec_4__credits_li:first-child {
   margin-top: 0;
 }
+@media screen and (max-width: 767px) {
+  #LB250307candy .sec_4 {
+    padding-right: 0;
+  }
+}
 #LB250307candy .sec_5 {
   margin-top: 11.3rem;
-  margin-right: auto;
-  margin-left: auto;
   padding-right: 2.6rem;
 }
-#LB250307candy .sec_5__img_wrap {
+#LB250307candy .sec_5__inner {
   margin-right: auto;
   margin-left: auto;
-  width: 44.24rem;
+  max-width: 44.24rem;
 }
 #LB250307candy .sec_5__credits_ul {
   margin-top: 2.31rem;
@@ -377,9 +381,11 @@
 #LB250307candy .sec_7 {
   margin-top: 19.85rem;
   width: 100%;
-  max-width: 46rem;
+  max-width: 48rem;
   margin-right: auto;
   margin-left: auto;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
 }
 #LB250307candy .sec_7__img_wrap {
   position: relative;
@@ -424,7 +430,7 @@
 }
 #LB250307candy .sec_8 {
   margin-top: 11.24rem;
-  max-width: 91.8rem;
+  max-width: 86rem;
   margin-right: auto;
   margin-left: auto;
   padding-left: 5.8rem;
