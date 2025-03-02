@@ -731,6 +731,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       margin-top: 0;
     }
     @media screen and (max-width:767px) {
+      padding-left: 0;
       &__inner { 
         grid-template-rows: auto;
         grid-template-columns: 1fr;

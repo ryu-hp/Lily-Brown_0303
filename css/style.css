@@ -631,6 +631,9 @@ body {
   margin-top: 0;
 }
 @media screen and (max-width: 767px) {
+  #LB250307candy .sec_8 {
+    padding-left: 0;
+  }
   #LB250307candy .sec_8__inner {
     grid-template-rows: auto;
     grid-template-columns: 1fr;
