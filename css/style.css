@@ -319,6 +319,8 @@
   padding-right: 2.6rem;
 }
 #LB250307candy .sec_5__img_wrap {
+  margin-right: auto;
+  margin-left: auto;
   width: 44.24rem;
 }
 #LB250307candy .sec_5__credits_ul {
@@ -374,6 +376,8 @@
 }
 #LB250307candy .sec_7 {
   margin-top: 19.85rem;
+  width: 100%;
+  max-width: 46rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -420,6 +424,7 @@
 }
 #LB250307candy .sec_8 {
   margin-top: 11.24rem;
+  max-width: 91.8rem;
   margin-right: auto;
   margin-left: auto;
   padding-left: 5.8rem;
