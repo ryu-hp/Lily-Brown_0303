@@ -20,7 +20,12 @@
   <script src="./js/script.js"></script>
   <style>
     html {
-      font-size: 62.5%;
+      font-size: 65%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
     }
   
     @media screen and (min-width: 768px) and (max-width: 1100px) {
@@ -40,22 +45,38 @@
             <img src="./img/pc_mv.jpg" alt="LILY BROWN CANDY STOCK" class="mv__img">
           </picture>
         </a>
-        <div class="mv__text_wrap">
+        <div class="mv__text_wrap pc-only">
           <div class="mv__text mv__text--1">
             <span class="font_feature__palt">伝統的でクラッシックなビジュー使いを</span>
           </div>
           <div class="mv__text mv__text--2">
-            <span class="font_feature__palt">現代のファッションにブレイクダウンした<br class='sp-only'></span>L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
+            <span class="font_feature__palt">現代のファッションにブレイクダウンした</span>L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
+          </div>
+        </div>
+        <div class="mv__text_wrap sp-only">
+          <div class="mv__text mv__text--1">
+            <span class="font_feature__palt">伝統的でクラッシックなビジュー使いを</span>
+          </div>
+          <div class="mv__text mv__text--2">
+            <span class="font_feature__palt">現代のファッションにブレイクダウンした</span>
+          </div>
+          <div class="mv__text mv__text--3">
+            L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
           </div>
         </div>
       </div>
     </section>
     <section class="sec_1">
-      <div class="sec_1__img_1_wrap js-fadeIn">
-        <div class="sec_1__img_1">
-          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy01">
-            <img src="./img/film_2_03.jpg" class="sec_1__img_1__img">
-          </a>
+      <div class="sec_1__inner">
+        <div class="sec_1__img_1_wrap js-fadeIn">
+          <div class="sec_1__img_1">
+            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy01">
+              <picture>
+                <source srcset="./img/sp_film_2_03.jpg" media="(max-width: 767px)" type="image/jpg" class="sec_1__img_1__img">
+                <img src="./img/film_2_03.jpg" alt="" class="sec_1__img_1__img">
+              </picture>
+            </a>
+          </div>
         </div>
         <ul class="sec_1__credits_ul">
           <li class="sec_1__credits_li">
@@ -74,45 +95,15 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="sec_1__img_2_warp">
-        <a href="" class=" js-fadeInReplace">
-          <img src="./img/film_1_01.jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
-          <img src="./img/film_3_01.jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
-        </a>
-      </div>
-    </section>
-    <section class="sec_1-2">
-      <div class="sec_1-2__inner">
-        <div class="sec_1-2__img_1_wrap">
-          <div class="sec_1-2__img_1 js-fadeIn">
-            <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy01">
-              <img src="./img/film_2_03.jpg" class="sec_1-2__img_1__img">
-            </a>
-          </div>
-          <ul class="sec_1-2__credits_ul">
-            <li class="sec_1-2__credits_li">
-              <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductDetail.aspx?shop=&pid=LWFO251808" class="sec_1-2__credits_li_link">
-                Dress 29,920yen
-              </a>
-            </li>
-            <li class="sec_1-2__credits_li">
-              <a href="" class="sec_1-2__credits_li_link">
-                Earrings 5,280yen
-              </a>
-            </li>
-            <li class="sec_1-2__credits_li">
-              <a href="" class="sec_1-2__credits_li_link">
-                Shoes 13,970yen
-              </a>
-            </li>
-          </ul>
-          <div class="sec_1-2__img_2_warp">
-            <a href="" class=" js-fadeInReplace">
-              <img src="./img/film_1_01.jpg" class="sec_1-2__img_2 sec_1-2__img_2--1 replace__img visible js-replaceImg">
-              <img src="./img/film_3_01.jpg" class="sec_1-2__img_2 sec_1-2__img_2--2 replace__img js-replaceImg">
-            </a>
-          </div>
+        <div class="sec_1__img_2_warp">
+          <a href="" class=" js-fadeInReplace pc-only">
+            <img src="./img/film_1_01.jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
+            <img src="./img/film_3_01.jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
+          </a>
+          <a href="" class=" js-fadeInReplace sp-only">
+            <img src="./img/sp_film_1_01.jpg" alt="" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
+            <img src="./img/sp_film_3_01.jpg" alt="" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
+          </a>
         </div>
       </div>
     </section>
@@ -167,25 +158,8 @@
           <a href="">
             <img src="./img/film_5_15.jpg" alt="" class="sec_4__img_2">
           </a>
-          <ul class="sec_4__credits_ul sp-only">
-            <li class="sec_4__credits_li">
-              <a href="">
-                Knit tops 9,900yen
-              </a>
-            </li>
-            <li class="sec_4__credits_li">
-              <a href="">
-                Skirt 22,990yen
-              </a>
-            </li>
-            <li class="sec_4__credits_li">
-              <a href="">
-                Hair clip 4,620yen
-              </a>
-            </li>
-          </ul>
         </div>
-        <ul class="sec_4__credits_ul pc-only">
+        <ul class="sec_4__credits_ul">
           <li class="sec_4__credits_li">
             <a href="">
               Knit tops 9,900yen
@@ -329,7 +303,10 @@
     <section class="sec_9 js-fadeIn">
       <div class="sec_9__img_wrap">
         <a href="">
-          <img src="./img/film_9_10.jpg" alt="" class="sec_9__img">
+          <picture>
+            <source srcset="./img/sp_film_9_10.jpg" media="(max-width: 767px)" class="sec_9__img">
+            <img src="./img/film_9_10.jpg" alt="" class="sec_9__img">
+          </picture>
         </a>
       </div>
     </section>
@@ -597,7 +574,8 @@
       </div>
       <div class="lineup__links">
         <div class="lineup__btn">
-          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&pgi=&cicon=&dosp=&dpcnt=40&img=1&disp=col&max=&min=&sort=07&swrd=L.B+CANDY+STOCK&udns=2&fpfl=0&cid=&bid=&rrlt=&pno=1&pslid=&pslkbn=">
+          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&cat=&pgi=&cicon=&dosp=&dpcnt=40&img=1&disp=col&max=&min=&sort=07&swrd=L.B+CANDY+STOCK&udns=2&fpfl=0&cid=&bid=&rrlt=&pno=1&pslid=&pslkbn=
+            ">
             <picture>
               <source srcset="./img/sp_btn_1.png" media="(max-width: 767px)" type="image/jpg">
               <img src="./img/pc_btn_1.png" alt="LILY BROWN CANDY STOCK" class="mv__img">
