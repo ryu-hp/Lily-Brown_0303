@@ -114,9 +114,12 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     display: none;
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 767px) {
     .sp-only {
       display: block;
+    }
+    .pc-only {
+      display: none;
     }
   }
 
@@ -159,7 +162,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 767px) {
     .mv {
       margin-left: 0;
       width: spSize(750);
@@ -234,7 +237,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 767px) {
     .sec_1 {
       grid-template-columns: spSize(630) spSize(120);
       // grid-template-rows: 33.6rem 23.9rem 9.5rem 12.3rem;
@@ -323,7 +326,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 767px) {
     .sec_1-2 {
 
       
