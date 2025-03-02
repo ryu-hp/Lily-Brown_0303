@@ -498,6 +498,29 @@
 #LB250307candy .sec_6__credits_li:first-child {
   margin-top: 0;
 }
+@media screen and (max-width: 767px) {
+  #LB250307candy .sec_6__inner {
+    grid-template-rows: unset;
+    grid-template-columns: auto calc(460 * 0.1333333333vw);
+    gap: calc(120 * 0.1333333333vw) calc(43 * 0.1333333333vw);
+  }
+  #LB250307candy .sec_6__img_1_wrap {
+    width: calc(670 * 0.1333333333vw);
+    margin-right: auto;
+    margin-left: auto;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #LB250307candy .sec_6__img_2_wrap {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #LB250307candy .sec_6__credits_ul {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
 #LB250307candy .sec_7 {
   margin-top: 19.85rem;
   width: 100%;
