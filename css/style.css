@@ -12,7 +12,8 @@
   /* slider */
 }
 #LB250307candy .font_feature__palt {
-  font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 #LB250307candy picture {
   display: block;
@@ -41,6 +42,7 @@
 #LB250307candy .js-fadeIn {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 1s, visibility 1s;
   transition: opacity 1s, visibility 1s;
 }
 #LB250307candy .js-fadeIn.visible {
@@ -50,24 +52,34 @@
 #LB250307candy .js-fadeInLeft {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(80px);
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+  -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+  transition: opacity 1s, visibility 1s, -webkit-transform 1s;
   transition: opacity 1s, visibility 1s, transform 1s;
+  transition: opacity 1s, visibility 1s, transform 1s, -webkit-transform 1s;
 }
 #LB250307candy .js-fadeInRight {
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-80px);
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+  -webkit-transition: opacity 1s, visibility 1s, -webkit-transform 1s;
+  transition: opacity 1s, visibility 1s, -webkit-transform 1s;
   transition: opacity 1s, visibility 1s, transform 1s;
+  transition: opacity 1s, visibility 1s, transform 1s, -webkit-transform 1s;
 }
 #LB250307candy .js-fadeInLeft.visible,
 #LB250307candy .js-fadeInRight.visible {
   opacity: 1;
   visibility: visible;
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 #LB250307candy .js-fadeInMv {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all ease 1s;
   transition: all ease 1s;
 }
 #LB250307candy .js-fadeInMv.visible {
@@ -77,6 +89,7 @@
 #LB250307candy .replace__img {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 2s, visibility 2s;
   transition: opacity 2s, visibility 2s;
 }
 #LB250307candy .replace__img.visible {
@@ -92,7 +105,8 @@
   }
 }
 #LB250307candy .mv {
-  margin-left: 20.4rem;
+  margin-right: auto;
+  margin-left: auto;
   width: 92.3rem;
 }
 #LB250307candy .mv__img {
@@ -193,9 +207,16 @@
   }
 }
 #LB250307candy .sec_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 11.45rem;
 }
 #LB250307candy .sec_2__img_wrap {
@@ -248,8 +269,12 @@
   display: grid;
   grid-template-rows: 10rem 42.5rem 10rem 9.5rem;
   grid-template-columns: 32.67rem 48rem;
-  column-gap: 11.57rem;
-  margin-left: 27.1rem;
+  -webkit-column-gap: 11.57rem;
+     -moz-column-gap: 11.57rem;
+          column-gap: 11.57rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #LB250307candy .sec_4__img_1_wrap {
   position: relative;
@@ -289,7 +314,9 @@
 }
 #LB250307candy .sec_5 {
   margin-top: 11.3rem;
-  margin-left: 43.15rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2.6rem;
 }
 #LB250307candy .sec_5__img_wrap {
   width: 44.24rem;
@@ -309,7 +336,9 @@
 }
 #LB250307candy .sec_6 {
   margin-top: 11.25rem;
-  margin-left: 12.7rem;
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
 }
 #LB250307candy .sec_6__inner {
   display: grid;
@@ -333,6 +362,8 @@
   font-size: 1.27rem;
   letter-spacing: 0.01rem;
   line-height: 1.62rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #LB250307candy .sec_6__credits_li {
@@ -343,7 +374,8 @@
 }
 #LB250307candy .sec_7 {
   margin-top: 19.85rem;
-  margin-left: 44.4rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 #LB250307candy .sec_7__img_wrap {
   position: relative;
@@ -388,7 +420,9 @@
 }
 #LB250307candy .sec_8 {
   margin-top: 11.24rem;
-  margin-left: 28.1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5.8rem;
 }
 #LB250307candy .sec_8__inner {
   display: grid;
@@ -445,7 +479,8 @@
 }
 #LB250307candy .sec_9__img_wrap {
   width: 25rem;
-  margin-left: 54.05rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 #LB250307candy .lineup {
   margin-top: 11.05rem;
@@ -456,6 +491,8 @@
 #LB250307candy .lineup__title {
   text-align: center;
   font-size: 4.18rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   margin-left: 54.5rem;
 }
@@ -474,6 +511,8 @@
 }
 #LB250307candy .lineup__links {
   margin: 11.6rem auto 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #LB250307candy .lineup__btn {
@@ -486,5 +525,6 @@
   width: 100%;
 }
 #LB250307candy .swiper-wrapper {
-  transition-timing-function: linear;
-}/*# sourceMappingURL=style.css.map */
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+}

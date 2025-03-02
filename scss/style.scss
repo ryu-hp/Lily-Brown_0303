@@ -1,6 +1,7 @@
 @function spSize($size) {
   @return calc(#{$size} * (100vw / 750));
 }
+$second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",sans-serif;;
 
 #LB250307candy {
   /* Common */
@@ -113,7 +114,10 @@
 
   /* mv */
   .mv {
-    margin-left: 20.4rem;
+    // margin-left: 20.4rem;
+    // 追加
+    margin-right:auto;
+    margin-left:auto;
     width: 92.3rem;
 
     &__img {
@@ -306,7 +310,11 @@
       grid-template-rows: 10rem 42.5rem 10rem 9.5rem;
       grid-template-columns: 32.67rem 48rem;
       column-gap: 11.57rem;
-      margin-left: 27.1rem;
+      // margin-left: 27.1rem;
+      // 追加
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &__img_1_wrap {
@@ -354,7 +362,11 @@
 
   .sec_5 {
     margin-top: 11.3rem;
-    margin-left: 43.15rem;
+    // margin-left: 43.15rem;
+    // 追加
+    margin-right:auto;
+    margin-left:auto;
+    padding-right: 2.6rem;
 
     &__img_wrap {
       width: 44.24rem;
@@ -379,7 +391,11 @@
 
   .sec_6 {
     margin-top: 11.25rem;
-    margin-left: 12.7rem;
+    // margin-left: 12.7rem;
+    // 追加
+    max-width: 1120px;
+    margin-right:auto;
+    margin-left:auto;
 
     &__inner {
       display: grid;
@@ -420,8 +436,10 @@
 
   .sec_7 {
     margin-top: 19.85rem;
-    margin-left: 44.4rem;
-
+    // margin-left: 44.4rem;
+    // 追加
+    margin-right:auto;
+    margin-left:auto;
     &__img_wrap {
       position: relative;
       width: 44.27rem;
@@ -473,7 +491,11 @@
 
   .sec_8 {
     margin-top: 11.24rem;
-    margin-left: 28.1rem;
+    // margin-left: 28.1rem;
+    // 追加
+    margin-right:auto;
+    margin-left:auto;
+    padding-left: 5.8rem;
 
     &__inner {
       display: grid;
@@ -539,7 +561,10 @@
     
     &__img_wrap {
       width: 25rem;
-      margin-left: 54.05rem;
+      // margin-left: 54.05rem;
+      // 追加
+      margin-right:auto;
+      margin-left:auto;
     }
   }
 
