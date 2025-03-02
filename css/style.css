@@ -24,8 +24,6 @@
 }
 #LB250307candy a {
   display: block;
-  width: 100%;
-  height: 100%;
   text-decoration: none;
   color: #161616;
 }
@@ -34,6 +32,7 @@
 }
 #LB250307candy img {
   width: 100%;
+  display: block;
 }
 #LB250307candy ul {
   margin: 0;
@@ -402,6 +401,38 @@
 @media screen and (max-width: 767px) {
   #LB250307candy .sec_4 {
     padding-right: 0;
+  }
+  #LB250307candy .sec_4__inner {
+    position: relative;
+    grid-template-rows: unset;
+    grid-template-columns: 1fr;
+    gap: calc(120 * 0.1333333333vw);
+    max-width: 100%;
+  }
+  #LB250307candy .sec_4__img_1_wrap, #LB250307candy .sec_4__img_2_wrap {
+    grid-area: auto;
+  }
+  #LB250307candy .sec_4__img_1_wrap {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: calc(460 * 0.1333333333vw);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #LB250307candy .sec_4__img_1_wrap::before {
+    right: calc(-145 * 0.1333333333vw);
+    width: calc(430 * 0.1333333333vw);
+    height: auto;
+    padding-top: 130%;
+    bottom: 75.4180602007%;
+    left: auto;
+    top: auto;
+  }
+  #LB250307candy .sec_4__img_2_wrap {
+    max-width: calc(670 * 0.1333333333vw);
+    width: 100%;
   }
 }
 #LB250307candy .sec_5 {
