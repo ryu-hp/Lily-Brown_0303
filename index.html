@@ -22,6 +22,11 @@
     html {
       font-size: 65%;
     }
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
   
     @media screen and (min-width: 768px) and (max-width: 1100px) {
       html {
@@ -38,22 +43,38 @@
           <source srcset="./img/sp_mv.jpg" media="(max-width: 750px)" type="image/jpg" class="mv__img">
           <img src="./img/pc_mv.jpg" alt="LILY BROWN CANDY STOCK" class="mv__img">
         </picture>
-        <div class="mv__text_wrap">
+        <div class="mv__text_wrap pc-only">
           <div class="mv__text mv__text--1">
             <span class="font_feature__palt">伝統的でクラッシックなビジュー使いを</span>
           </div>
           <div class="mv__text mv__text--2">
-            <span class="font_feature__palt">現代のファッションにブレイクダウンした<br class='sp-only'></span>L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
+            <span class="font_feature__palt">現代のファッションにブレイクダウンした</span>L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
+          </div>
+        </div>
+        <div class="mv__text_wrap sp-only">
+          <div class="mv__text mv__text--1">
+            <span class="font_feature__palt">伝統的でクラッシックなビジュー使いを</span>
+          </div>
+          <div class="mv__text mv__text--2">
+            <span class="font_feature__palt">現代のファッションにブレイクダウンした</span>
+          </div>
+          <div class="mv__text mv__text--3">
+            L.B CANDY STOCK <span class="font_feature__palt">春の最新コレクション。</span>
           </div>
         </div>
       </div>
     </section>
     <section class="sec_1">
-      <div class="sec_1__img_1_wrap js-fadeIn">
-        <div class="sec_1__img_1">
-          <a href="">
-            <img src="./img/film_2_03.jpg" class="sec_1__img_1__img">
-          </a>
+      <div class="sec_1__inner">
+        <div class="sec_1__img_1_wrap js-fadeIn">
+          <div class="sec_1__img_1">
+            <a href="">
+              <picture>
+                <source srcset="./img/sp_film_2_03.jpg" media="(max-width: 750px)" type="image/jpg" class="sec_1__img_1__img">
+                <img src="./img/film_2_03.jpg" alt="" class="sec_1__img_1__img">
+              </picture>
+            </a>
+          </div>
         </div>
         <ul class="sec_1__credits_ul">
           <li class="sec_1__credits_li">
@@ -72,12 +93,18 @@
             </a>
           </li>
         </ul>
-      </div>
-      <div class="sec_1__img_2_warp">
-        <a href="" class=" js-fadeInReplace">
-          <img src="./img/film_1_01.jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
-          <img src="./img/film_3_01.jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
-        </a>
+        <div class="sec_1__img_2_warp">
+          <a href="" class=" js-fadeInReplace">
+            <picture>
+              <source srcset="./img/sp_film_1_01.jpg" media="(max-width: 750px)" type="image/jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
+              <img src="./img/film_1_01.jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
+            </picture>
+            <picture>
+              <source srcset="./img/sp_film_3_01.jpg" media="(max-width: 750px)" type="image/jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
+              <img src="./img/film_3_01.jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
+            </picture>
+          </a>
+        </div>
       </div>
     </section>
     <section class="sec_2 js-fadeIn">
