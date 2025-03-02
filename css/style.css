@@ -15,6 +15,9 @@
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
 }
+#LB250307candy body {
+  margin: 0;
+}
 #LB250307candy picture {
   display: block;
   width: 100%;
@@ -133,6 +136,9 @@
     margin-left: 0;
     width: calc(750 * 0.1333333333vw);
   }
+  #LB250307candy .mv__text_wrap {
+    margin-top: calc(76.5 * 0.1333333333vw);
+  }
   #LB250307candy .mv__text {
     font-size: calc(26.44 * 0.1333333333vw);
   }
@@ -204,6 +210,85 @@
   }
   #LB250307candy .sec_1__img_2_warp {
     grid-column: 2/2;
+  }
+}
+#LB250307candy .sec_1-2 {
+  margin-top: 11.01rem;
+}
+#LB250307candy .sec_1-2__inner {
+  max-width: 140rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+#LB250307candy .sec_1-2__img_1_wrap {
+  position: relative;
+  max-width: 44.26rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+#LB250307candy .sec_1-2__img_1_wrap::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/pc_bg_1.jpg");
+  width: 69.24rem;
+  height: 46rem;
+  left: -45.2rem;
+  bottom: -36.54rem;
+  z-index: -1;
+  pointer-events: none;
+}
+#LB250307candy .sec_1-2__credits_ul {
+  margin-top: 2.3rem;
+  font-size: 1.27rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.65rem;
+}
+#LB250307candy .sec_1-2__credits_li {
+  margin-top: 0.82rem;
+}
+#LB250307candy .sec_1-2__credits_li:first-child {
+  margin-top: 0;
+}
+#LB250307candy .sec_1-2__img_2_warp {
+  position: absolute;
+  max-width: 36.6rem;
+  border: solid 6px white;
+  background-color: white;
+  border-right: none;
+  z-index: 100;
+  right: -33rem;
+  top: 48.1605351171%;
+}
+#LB250307candy .sec_1-2__img_2_warp::after {
+  display: block;
+  content: "";
+  padding-top: 130%;
+}
+#LB250307candy .sec_1-2__img_2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 750px) {
+  #LB250307candy .sec_1-2__img_1_wrap {
+    max-width: 100%;
+    padding-right: calc(120 * 0.1333333333vw);
+  }
+  #LB250307candy .sec_1-2__img_1_wrap::before {
+    width: 100%;
+    left: 0;
+    height: auto;
+    padding-top: 100%;
+    bottom: auto;
+    top: 34.0659340659%;
+  }
+  #LB250307candy .sec_1-2__img_2_warp {
+    right: 0;
+    top: 81.1355311355%;
+    border-right: none;
   }
 }
 #LB250307candy .sec_2 {

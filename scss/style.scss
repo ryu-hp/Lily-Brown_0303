@@ -16,6 +16,11 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     font-feature-settings: "palt";
   }
 
+  // 追加
+  body {
+    margin: 0;
+  }
+
   picture {
     display: block;
     width: 100%;
@@ -155,7 +160,9 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     .mv {
       margin-left: 0;
       width: spSize(750);
-
+      &__text_wrap {
+        margin-top: spSize(76.5);
+      }
       &__text {
         font-size: spSize(26.44);
       }
@@ -239,6 +246,99 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
       &__img_2_warp {
         grid-column: 2 / 2;
+      }
+    }
+  }
+  .sec_1-2 {
+    margin-top: 11.01rem;
+    &__inner {
+      max-width: 140rem;
+      margin-right:auto;
+      margin-left:auto;
+    }
+    &__img_1_wrap {
+
+      position: relative;
+      max-width: 44.26rem;
+      margin-right:auto;
+      margin-left:auto;
+
+      &::before {
+        position: absolute;
+        content: "";
+        display: block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../img/pc_bg_1.jpg');
+        width: 69.24rem;
+        height: 46rem;
+        left: -45.2rem;
+        bottom: -36.54rem;
+        z-index: -1;
+        pointer-events: none;
+      }
+    }
+
+    &__credits_ul {
+      margin-top: 2.3rem;
+      font-size: 1.27rem;
+      letter-spacing: 0.02rem;
+      line-height: 1.65rem;
+    }
+
+    &__credits_li {
+      margin-top: 0.82rem;
+    }
+
+    &__credits_li:first-child {
+      margin-top: 0;
+    }
+
+    &__img_2_warp {
+      position: absolute;
+      max-width: 36.6rem;
+      // height: 30rem;
+      border: solid 6px white;
+      background-color: white;
+      border-right: none;
+      z-index: 100;
+      right: -33.0rem;
+      top: calc(288 / 598 * 100%);
+    }
+    &__img_2_warp::after {
+      display: block;
+      content: "";
+      padding-top: calc(468 / 360 * 100%);
+    }
+
+    &__img_2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .sec_1-2 {
+
+      
+      &__img_1_wrap {
+        max-width: 100%;
+        padding-right: spSize(120);
+        &::before {
+          width: 100%;
+          left: 0;
+          height: auto;
+          padding-top: 100%;
+          bottom: auto;
+          top: calc(279 / 819 * 100%);
+        }
+      }
+      
+      &__img_2_warp {
+        right: 0;
+        top: calc(664.5 / 819 * 100%);
+        border-right: none;
       }
     }
   }
