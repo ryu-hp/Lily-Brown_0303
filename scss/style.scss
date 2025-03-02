@@ -584,7 +584,10 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       text-align: center;
       font-size: 4.18rem;
       width: fit-content;
-      margin-left: 54.5rem;
+      // margin-left: 54.5rem;
+      // 追加
+      margin-right:auto;
+      margin-left:auto;
     }
 
     &__slider {

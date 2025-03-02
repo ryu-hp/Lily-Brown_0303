@@ -499,7 +499,8 @@
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 54.5rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 #LB250307candy .lineup__slider {
   border-bottom: solid 1px #E2E2E2;
