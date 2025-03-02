@@ -738,16 +738,19 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       }
       &__img_1_wrap{
         width: 100%;
+        grid-area: auto;
       }
       &__img_2_wrap{
         width: spSize(630);
         margin-right:auto;
         margin-left:auto;
+        grid-area: auto;
       }
       &__credits_ul {
         width: 100%;
         padding-left: spSize(60);
         padding-right: spSize(60);
+        grid-area: auto;
       }
     }
   }
