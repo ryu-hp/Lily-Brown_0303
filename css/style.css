@@ -602,6 +602,26 @@ body {
   left: -5.8rem;
   z-index: -1;
 }
+@media screen and (max-width: 767px) {
+  #LB250307candy .sec_8__img_1_wrap__inner {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: calc(60 * 0.1333333333vw);
+  }
+  #LB250307candy .sec_8__img_1_wrap__img_1_wrap {
+    width: 100%;
+  }
+  #LB250307candy .sec_8__img_1_wrap__img_2_wrap {
+    width: calc(630 * 0.1333333333vw);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #LB250307candy .sec_8__img_1_wrap__credits_ul {
+    width: 100%;
+    padding-left: calc(60 * 0.1333333333vw);
+    padding-right: calc(60 * 0.1333333333vw);
+  }
+}
 #LB250307candy .sec_8__img_1_text {
   position: absolute;
   font-size: 3.83rem;

@@ -695,6 +695,26 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         left: -5.8rem;
         z-index: -1;
       }
+      @media screen and (max-width:767px) {
+        &__inner { 
+          grid-template-rows: auto;
+          grid-template-columns: 1fr;
+          gap: spSize(60);
+        }
+        &__img_1_wrap{
+          width: 100%;
+        }
+        &__img_2_wrap{
+          width: spSize(630);
+          margin-right:auto;
+          margin-left:auto;
+        }
+        &__credits_ul {
+          width: 100%;
+          padding-left: spSize(60);
+          padding-right: spSize(60);
+        }
+      }
     }
 
     &__img_1_text {
