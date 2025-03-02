@@ -1,7 +1,12 @@
 @function spSize($size) {
   @return calc(#{$size} * (100vw / 750));
 }
-$second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",sans-serif;;
+$second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic",sans-serif;
+
+  // 追加
+  body {
+    margin: 0;
+  }
 
 #LB250307candy {
   /* Common */
@@ -16,10 +21,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     font-feature-settings: "palt";
   }
 
-  // 追加
-  body {
-    margin: 0;
-  }
+
 
   picture {
     display: block;
@@ -598,6 +600,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       &__credits_ul {
         grid-column: 1 / 2  ;
         grid-row: 1 / 2  ;  
+        padding-left: spSize(40);
       }
     }
   }
