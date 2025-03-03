@@ -141,12 +141,12 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
   <section class="sec_4 js-fadeIn">
     <div class="sec_4__inner">
       <div class="sec_4__img_1_wrap">
-        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy02">
+        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy03">
           <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_01.jpg" alt="" class="sec_4__img_1">
         </a>
       </div>
       <div class="sec_4__img_2_wrap">
-        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy02">
+        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy03">
           <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_5_15.jpg" alt="" class="sec_4__img_2">
         </a>
       </div>
@@ -574,7 +574,7 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
         </a>
       </div>
       <div class="lineup__btn">
-        <a href="">
+        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candyALL">
           <picture>
             <source srcset="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/sp_btn_2.png" media="(max-width: 767px)" type="image/jpg">
             <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/pc_btn_2.png" alt="LILY BROWN CANDY STOCK" class="mv__img">
