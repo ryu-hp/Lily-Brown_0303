@@ -9,7 +9,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
 #LB250307candy {
   /* Common */
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "presti-display", serif;
   font-weight: 400;
@@ -126,9 +126,14 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
   /* mv */
   .mv {
-    margin-right:auto;
-    margin-left:auto;
-    width: 92.3rem;
+    width: 100%;
+
+    &__inner {
+      margin-right:auto;
+      margin-left:auto;
+      width: 92.3rem;
+
+    }
 
     &__img {
       width: 100%;
@@ -158,7 +163,10 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
   @media screen and (max-width: 767px) {
     .mv {
       margin-left: 0;
-      width: spSize(750);
+
+      &__inner {
+        width: spSize(750);
+      }
 
       &__text_wrap {
         margin-top: 6.7rem;
@@ -179,18 +187,25 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
   }
 
   .sec_1 {
-    margin-top: 11.01rem;
+    margin-top: 11.11rem;
+    width: 100%;
+
+    &__wrap {
+      margin-right: auto;
+      padding-left: 33.5%;
+      width: 76rem;
+      max-width: 100%;
+    }
 
     &__inner {
       display: grid;
-      grid-template-columns: 45.4rem 40.8rem 35.1rem;
-      grid-template-rows: 33.6rem 23.9rem 9.5rem 12.3rem;
-      margin: 0 auto;
-      width: 121.4rem;  
+      grid-template-columns: 41.4rem 34.5rem 13.5rem;
+      grid-template-rows: 34.2rem 23.9rem 9.5rem 12.3rem;
+      width: 77rem;
     }
 
     &__img_1_wrap {
-      grid-column: 2 / 2;
+      grid-column: 1;
       grid-row: 1 / 2;
       position: relative;
       width: 44.26rem;
@@ -205,15 +220,15 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         width: 69.24rem;
         height: 46rem;
         left: -45.2rem;
-        bottom: -36.54rem;
+        bottom: -35.94rem;
         z-index: -1;
         pointer-events: none;
       }
     }
 
     &__credits_ul {
-      grid-column: 2 / 2;
-      grid-row: 2 / 2;
+      grid-column: 1;
+      grid-row: 3/3;
       margin-top: 2.3rem;
       font-size: 1.27rem;
       letter-spacing: 0.02rem;
@@ -230,13 +245,23 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
     &__img_2_warp {
       position: relative;
-      grid-column: 3 / 3;
+      grid-column: 2;
       grid-row: 2 / 2;
       width: 34.6rem;
       height: 30rem;
-      border: solid 6px $color-white;
       background-color: $color-white;
       z-index: 100;
+
+      &::before {
+        position: absolute;
+        top: -6px;
+        left: -6px;
+        content: "";
+        width: 34.6rem;
+        height: 30rem;
+        background-color: $color-white;
+
+      }
     }
 
     &__img_2 {
@@ -247,9 +272,15 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
   @media screen and (max-width: 767px) {
     .sec_1 {
       margin-top: 14.51rem;
+      padding-left: 0;
+
+      &__wrap {
+        padding-left: 0;
+      }
+
       &__inner {
-        grid-template-columns: spSize(40) spSize(243) spSize(349) spSize(118);
-        grid-template-rows: spSize(770) spSize(100) spSize(118) spSize(390);
+        grid-template-columns: spSize(40) spSize(249) spSize(349) spSize(118);
+        grid-template-rows: spSize(778) spSize(93) spSize(118) spSize(390);
         width: spSize(750);
       }
 
@@ -270,16 +301,23 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       &__img_2_warp {
         grid-column: 3 / 4;
         width: spSize(460);
-        border: solid 9px $color-white;
+        height: fit-content;
+
+        &::before {
+          width: spSize(460);
+        }
       }
 
       &__credits_ul {
         grid-column: 2 / 2;
         grid-row: 3 / 3;
-        margin-top: spSize(-5);
-        font-size: 2.27rem;
+        margin-top: 1.7%;
+        font-size: calc(23.3 * (100vw / 750));
         letter-spacing: 0.8px;
-        line-height: 3.75rem;
+      }
+
+      &__credits_li {
+        margin-top: 12.6%;
       }
     }
   }
@@ -288,7 +326,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 11.45rem;
+    margin-top: 10.85rem;
 
     &__img_wrap {
       position: relative;
@@ -364,7 +402,6 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
       &__credits_ul {
         margin-top: spSize(49);
-        padding-left: spSize(82);
         width: 100%;
         font-size: spSize(23.6);
         letter-spacing: spSize(0.7);
@@ -372,6 +409,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
       &__credits_li {
         margin-top: spSize(31);
+        padding-left: spSize(41);
       }
     }
   }
@@ -401,8 +439,8 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     &__inner {
       position: relative;
       display: grid;
-      grid-template-rows: 10rem 42.5rem 10rem 9.5rem;
-      grid-template-columns: 13.5rem 32.67rem 11.57rem 48rem;
+      grid-template-rows: 10rem 55.2rem;
+      grid-template-columns: 16.5rem 32.67rem 11.57rem 48rem;
       margin: 0 auto;
       width: 106rem;
     }
@@ -434,7 +472,6 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     &__credits_ul {
       grid-column: 4 / 4;
       grid-row: 4 / 4;
-      margin-top: 2.91rem;
       font-size: 1.27rem;
       letter-spacing: 0.02rem;
       line-height: 1.62rem;
@@ -483,9 +520,10 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       }
 
       &__credits_ul {
-        grid-column: 2 / 2;
+        grid-column: 2 / 4;
         grid-row: 3 / 3;
         margin-top: spSize(5);
+        width: 100%;
         font-size: spSize(24);
         letter-spacing: spSize(.6);
       }
@@ -498,9 +536,8 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
   .sec_5 {
     margin-top: 11.3rem;
-    // margin-left: 43.15rem;
     padding-right: 2.6rem;
-    // 追加
+
     &__inner {
       margin-right:auto;
       margin-left:auto;
@@ -543,6 +580,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
       &__credits_ul {
         margin-top: spSize(50);
+        width: 100%;
         font-size: spSize(24);
         letter-spacing: spSize(.5);
       }
@@ -561,10 +599,11 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
     &__inner {
       display: grid;
-      grid-template-rows: 19.25rem 23.2rem 34.25rem;
-      grid-template-columns: 44.2rem 30.85rem 32.68rem;
-      width: 111.6rem;
+      grid-template-rows: 19.25rem 26.3rem 31.25rem;
+      grid-template-columns: 44.1rem 30.95rem 32.68rem;
       margin: 0 auto;
+      width: 111.6rem;
+      max-width: 100%;
     }
 
     &__img_1_wrap {
@@ -580,7 +619,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     }
 
     &__credits_ul {
-      margin-top: 3rem;
+      margin-top: -0.2rem;
       grid-column: 3 / 3;
       grid-row: 3 / 3;
       font-size: 1.27rem;
@@ -636,9 +675,9 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
   }
 
   .sec_7 {
-    margin-top: 19.85rem;
+    margin-top: 19.75rem;
     width:100%;
-    max-width:48rem;
+    max-width:46.3rem;
     margin-right:auto;
     margin-left:auto;
     transform: translateX(10px);
@@ -738,7 +777,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
 
     &__inner {
       display: grid;
-      grid-template-columns: 5.9rem 30.7rem 7.74rem 44.45rem;
+      grid-template-columns: 1.5rem 30.7rem 7.84rem 44.45rem;
       grid-template-rows: 8.65rem 31.35rem 26.1rem 11.9rem;
       width: 88.8rem;
       margin: 0 auto;
@@ -768,8 +807,8 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       color: $color-white;
       line-height: 2.8rem;
       letter-spacing: -0.04rem;
-      top: 36.6rem;
-      left: -3.5rem;
+      top: 36.4rem;
+      left: -3.4rem;
     }
 
     &__img_2_wrap {
@@ -881,13 +920,12 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     overflow: hidden;
 
     &__title {
-      text-align: center;
-      font-size: 4.18rem;
-      width: fit-content;
-      // margin-left: 54.5rem;
-      // 追加
       margin-right:auto;
       margin-left:auto;
+      width: fit-content;
+      text-align: center;
+      font-size: 4.1rem;
+      letter-spacing: .05rem;
     }
 
     &__slider {
@@ -913,7 +951,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     }
 
     &__btn {
-      width: 40.3rem;
+      width: 40.35rem;
 
       &:last-child {
         margin-top: 0.4rem;
