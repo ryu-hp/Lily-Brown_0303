@@ -831,6 +831,7 @@
   #LB250307candy .lineup {
     margin-top: calc(160 * 0.1333333333vw);
     padding-top: calc(136 * 0.1333333333vw);
+    padding-bottom: calc(180 * 0.1333333333vw);
   }
   #LB250307candy .lineup__title {
     font-size: calc(63.5 * 0.1333333333vw);
