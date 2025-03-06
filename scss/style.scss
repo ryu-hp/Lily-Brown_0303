@@ -184,7 +184,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       text-align: center;
       font-family: $second-font-family;
       font-size: 1.5rem;
-
+      
       &--1 {
         letter-spacing: 0.08em;
       }
@@ -717,14 +717,11 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     &__img_wrap {
       position: relative;
       width: 100%;
-      background-color: $color-white;
-      border-right: 0.6rem solid #fff;
-      border-top: 0.6rem solid #fff;
 
       &::before {
         content: "";
         position: absolute;
-        top: -8.6rem;
+        top: -8rem;
         right: -8.6rem;
         background-image: url(../img/pc_bg_3.jpg);
         background-size: contain;
@@ -733,6 +730,12 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         z-index: -2;
       }
 
+    }
+    &__img_container {
+      position: relative;
+      width: 100%;
+      border-right: 0.6rem solid #fff;
+      border-top: 0.6rem solid #fff;
       &::after {
         content: "";
         width: 100%;
@@ -741,7 +744,6 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         z-index: -1;
       }
     }
-
     &__img {
       position: absolute;
     }
@@ -765,25 +767,28 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
     .sec_7 {
       margin: spSize(272) 0 0;
       transform: initial;
+      max-width: 100%;
 
       &__img_wrap {
+        max-width: spSize(638);
+        &::before {
+          top: spSize(-112);
+          right: spSize(-112);
+          background-image: url(../img/sp_bg_3.jpg);
+          width: spSize(460);
+          padding-top: 93.7%;
+        }
+
+        // &::after {
+        //   top: spSize(-6);
+        //   right: spSize(-9);
+        // }
+      }
+
+      &__img_container {
         width: spSize(638);
         border-top: spSize(8) solid #fff;
         border-right: spSize(8) solid #fff;
-        border-bottom: none;
-
-        &::before {
-          top: spSize(-120);
-          right: spSize(-120);
-          background-image: url(../img/sp_bg_3.jpg);
-          width: spSize(460);
-          padding-top: 95%;
-        }
-
-        &::after {
-          top: spSize(-6);
-          right: spSize(-9);
-        }
       }
 
       &__credits_ul {

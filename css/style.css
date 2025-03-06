@@ -628,14 +628,11 @@
 #LB250307candy .sec_7__img_wrap {
   position: relative;
   width: 100%;
-  background-color: #FFFFFF;
-  border-right: 0.6rem solid #fff;
-  border-top: 0.6rem solid #fff;
 }
 #LB250307candy .sec_7__img_wrap::before {
   content: "";
   position: absolute;
-  top: -8.6rem;
+  top: -8rem;
   right: -8.6rem;
   background-image: url(../img/pc_bg_3.jpg);
   background-size: contain;
@@ -643,7 +640,13 @@
   padding-top: 90.4%;
   z-index: -2;
 }
-#LB250307candy .sec_7__img_wrap::after {
+#LB250307candy .sec_7__img_container {
+  position: relative;
+  width: 100%;
+  border-right: 0.6rem solid #fff;
+  border-top: 0.6rem solid #fff;
+}
+#LB250307candy .sec_7__img_container::after {
   content: "";
   width: 100%;
   display: block;
@@ -669,23 +672,22 @@
     margin: calc(272 * 0.1333333333vw) 0 0;
     -webkit-transform: initial;
             transform: initial;
+    max-width: 100%;
   }
   #LB250307candy .sec_7__img_wrap {
+    max-width: calc(638 * 0.1333333333vw);
+  }
+  #LB250307candy .sec_7__img_wrap::before {
+    top: calc(-112 * 0.1333333333vw);
+    right: calc(-112 * 0.1333333333vw);
+    background-image: url(../img/sp_bg_3.jpg);
+    width: calc(460 * 0.1333333333vw);
+    padding-top: 93.7%;
+  }
+  #LB250307candy .sec_7__img_container {
     width: calc(638 * 0.1333333333vw);
     border-top: calc(8 * 0.1333333333vw) solid #fff;
     border-right: calc(8 * 0.1333333333vw) solid #fff;
-    border-bottom: none;
-  }
-  #LB250307candy .sec_7__img_wrap::before {
-    top: calc(-120 * 0.1333333333vw);
-    right: calc(-120 * 0.1333333333vw);
-    background-image: url(../img/sp_bg_3.jpg);
-    width: calc(460 * 0.1333333333vw);
-    padding-top: 95%;
-  }
-  #LB250307candy .sec_7__img_wrap::after {
-    top: calc(-6 * 0.1333333333vw);
-    right: calc(-9 * 0.1333333333vw);
   }
   #LB250307candy .sec_7__credits_ul {
     margin-top: calc(46 * 0.1333333333vw);

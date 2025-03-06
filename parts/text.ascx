@@ -16,7 +16,7 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
 <%-- ▽編集可能領域：コンテンツ▽ --%>
 <link rel="stylesheet" href='<%= Constants.PATH_ROOT %>Css/lp_common.css?ver=<%: System.IO.File.GetLastWriteTime(HttpContext.Current.Server.MapPath(Constants.PATH_ROOT + @"Css/lp_common.css")).ToString("yyMMddHHmmss") %>'>
 <%-- ▽外部ソース読み込み▽ --%>
-<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/css/style.css?2025-03-06-08:31">
+<link rel="stylesheet" href="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/css/style.css?2025-03-07-18:31">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -58,8 +58,8 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
   <section class="sec_1">
     <div class="sec_1__wrap">
       <div class="sec_1__inner">
-        <div class="sec_1__img_1_wrap js-fadeIn">
-          <div class="sec_1__img_1">
+        <div class="sec_1__img_1_wrap">
+          <div class="sec_1__img_1 js-fadeIn">
             <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy01">
               <picture>
                 <source srcset="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/sp_film_2_03.jpg" media="(max-width: 767px)" type="image/jpg" class="sec_1__img_1__img">
@@ -85,7 +85,7 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
             </a>
           </li>
         </ul>
-        <div class="sec_1__img_2_warp">
+        <div class="sec_1__img_2_warp js-fadeIn">
           <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy01" class=" js-fadeInReplace pc-only">
             <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_1_01.jpg" class="sec_1__img_2 sec_1__img_2--1 replace__img visible js-replaceImg">
             <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_3_01.jpg" class="sec_1__img_2 sec_1__img_2--2 replace__img js-replaceImg">
@@ -140,9 +140,11 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
   </section>
   <section class="sec_4">
     <div class="sec_4__inner">
-      <div class="sec_4__img_1_wrap js-fadeIn">
+      <div class="sec_4__img_1_wrap">
         <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy03">
-          <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_01.jpg" alt="" class="sec_4__img_1">
+          <div class="js-fadeIn">
+            <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_01.jpg" alt="" class="sec_4__img_1">
+          </div>
         </a>
       </div>
       <div class="sec_4__img_2_wrap js-fadeIn">
@@ -228,10 +230,12 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
   </section>
   <section class="sec_7">
     <div class="sec_7__img_wrap">
-      <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy06" class="js-fadeInReplace">
-        <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_04.jpg" class="sec_7__img sec_7__img--1 replace__img js-replaceImg visible">
-        <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_11.jpg" class="sec_7__img sec_7__img--2 replace__img js-replaceImg">
-      </a>
+      <div class="sec_7__img_container js-fadeIn">
+        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy06" class="js-fadeInReplace">
+          <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_04.jpg" class="sec_7__img sec_7__img--1 replace__img js-replaceImg visible">
+          <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_6_11.jpg" class="sec_7__img sec_7__img--2 replace__img js-replaceImg">
+        </a>
+      </div>
     </div>
     <ul class="sec_7__credits_ul">
       <li class="sec_7__credits_li">
@@ -254,9 +258,11 @@ Copyright   : Copyright w2solution Co.,Ltd. 2011 All Rights Reserved.
   <section class="sec_8">
     <div class="sec_8__inner">
       <div class="sec_8__img_1_wrap js-fadeIn">
-        <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy07">
-          <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_10_15.jpg" alt="" class="sec_8__img_1">
-        </a>
+        <div class="js-fadeIn">
+          <a href="<%= Constants.PATH_ROOT %>Form/Product/ProductList.aspx?shop=0&pgi=LB250307candy07">
+            <img src="<%= Constants.PATH_ROOT %>Page/feature/2025/0307/img/film_10_15.jpg" alt="" class="sec_8__img_1">
+          </a>
+        </div>
         <div class="sec_8__img_1_text">
           BE<br>
           ROMANTIC
