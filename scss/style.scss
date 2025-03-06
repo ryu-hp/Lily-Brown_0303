@@ -47,6 +47,12 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       opacity: .7;
     }
   }
+  @media screen and (max-width:767px) {
+    a:hover {
+      opacity: 1;
+      transition: none;
+    }
+  }
 
   img {
     width: 100%;
@@ -385,6 +391,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
       color: $color-white;
       left: 50%;
       transform: translateX(-50%);
+      z-index: 1;
 
       &--1 {
         top: 3.7rem;
@@ -491,10 +498,11 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         position: absolute;
         content: "";
         background-image: url(../img/pc_bg_2.jpg);
+        background-size: contain;
         top: -10.4rem;
         left: -14rem;
         width: 34rem;
-        padding-top: 130.5%;
+        padding-top: 130.1%;
         z-index: -1;
       }
     }
@@ -719,6 +727,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         top: -8.6rem;
         right: -8.6rem;
         background-image: url(../img/pc_bg_3.jpg);
+        background-size: contain;
         width: 32rem;
         padding-top: 90.4%;
         z-index: -2;
@@ -814,6 +823,7 @@ $second-font-family: "游ゴシック体",YuGothic,"游ゴシック Medium","Yu 
         position: absolute;
         content: "";
         background-image: url(../img/pc_bg_4.jpg);
+        background-size: contain;
         width: 32rem;
         padding-top: 130%;
         top: 66%;
